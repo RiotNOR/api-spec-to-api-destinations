@@ -122,9 +122,9 @@ function buildInputTransformer(definition) {
     return {
       InputTransformer: {
         InputPathsMap: {
-          message: "$.detail.message"
+          detail: "$.detail"
         },
-        InputTemplate: "\"<message>\""
+        InputTemplate: "\"<detail>\""
       }
     };
   }
